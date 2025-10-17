@@ -16,15 +16,13 @@ const VKMSchema = new Schema<IVKM>({
     content: { type: String },
     studycredit: { type: Number },
     location: { type: String },
-    contact_id: { type: Number },
     level: { type: String },
     learningoutcomes: { type: String },
     module_tags: { type: String },
-    interests_match_score: { type: Number },
-    popularity_score: { type: Number },
-    estimated_difficulty: { type: Number },
     available_spots: { type: Number },
     start_date: { type: Date },
+    language: { type: String },
+    period: { type: String },
     course: { type: CourseEmbeddedSchema, required: true }
 }, { collection: "VKM", versionKey: false });
 
